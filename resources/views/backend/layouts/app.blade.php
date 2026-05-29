@@ -2,10 +2,10 @@
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="default" data-theme-colors="default">
 <head>
     <meta charset="utf-8" />
-    <title>@yield('title', 'Admin') | NhaDatVN</title>
+    <title>@yield('title', 'Admin') | BDSVanPhuc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Admin dashboard" name="description" />
-    <meta content="NhaDatVN" name="author" />
+    <meta content="BDSVanPhuc" name="author" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" href="{{ asset('admin-assets/images/favicon.ico') }}">
     <script src="{{ asset('admin-assets/js/layout.js') }}"></script>
@@ -185,7 +185,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            {{ now()->year }} © NhaDatVN.
+                            {{ now()->year }} © BDSVanPhuc.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">

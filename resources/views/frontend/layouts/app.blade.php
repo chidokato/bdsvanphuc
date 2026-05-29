@@ -20,7 +20,7 @@
     <title>{{ $seoTitle }}</title>
     <meta name="description" content="{{ $seoDescription }}">
     <meta name="keywords" content="{{ $seoKeywords }}">
-    <meta name="author" content="NhaDatVN">
+    <meta name="author" content="BDSVanPhuc">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="canonical" href="{{ $seoCanonical }}">
@@ -30,7 +30,7 @@
     <meta property="og:title" content="{{ $seoTitle }}">
     <meta property="og:description" content="{{ $seoDescription }}">
     <meta property="og:url" content="{{ $seoCanonical }}">
-    <meta property="og:site_name" content="{{ $settings->company_name ?? 'NhaDatVN' }}">
+    <meta property="og:site_name" content="{{ $settings->company_name ?? 'BDSVanPhuc' }}">
     <meta property="og:image" content="{{ $seoImage }}">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -191,7 +191,7 @@
                             <span class="bg-effect"></span>
                         </button>
                         <p class="policy-note mb-0">
-                            ( * ) B&#7857;ng vi&#7879;c nh&#7845;n v&agrave;o n&uacute;t "t&#7843;i xu&#7889;ng", qu&yacute; kh&aacute;ch &#273;&#7891;ng &yacute; v&#7899;i <a href="https://nhadatvn.org/noi-bo/chinh-sach-bao-mat-thong-tin-khach-hang">ch&iacute;nh s&aacute;ch b&#7843;o m&#7853;t th&ocirc;ng tin</a> c&#7911;a ch&uacute;ng t&ocirc;i
+                            ( * ) B&#7857;ng vi&#7879;c nh&#7845;n v&agrave;o n&uacute;t "t&#7843;i xu&#7889;ng", qu&yacute; kh&aacute;ch &#273;&#7891;ng &yacute; v&#7899;i <a href="https://bdsvanphuc.org/noi-bo/chinh-sach-bao-mat-thong-tin-khach-hang">ch&iacute;nh s&aacute;ch b&#7843;o m&#7853;t th&ocirc;ng tin</a> c&#7911;a ch&uacute;ng t&ocirc;i
                         </p>
                     </form>
                 </div>

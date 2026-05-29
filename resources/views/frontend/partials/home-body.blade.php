@@ -372,7 +372,7 @@
                                         <div class="article-content ">
                                             <div class="meta-post d-flex align-items-center mb_12">
                                                 <div class="item text_secondary-color text-caption-1 ">Post By <a href="{{ $newsUrl }}"
-                                                        class="link text_primary-color">NhaDatVN</a></div>
+                                                        class="link text_primary-color">BDSVanPhuc</a></div>
                                                 <div class="item text_secondary-color text-caption-1 ">{{ $latestNewsDate($post) }}</div>
                                             </div>
                                             <h5 class="title ">

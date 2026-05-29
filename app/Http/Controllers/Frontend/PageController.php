@@ -295,7 +295,7 @@ class PageController extends BaseFrontendController
             $this->staticPageSeo('about', [
                 'title' => 'Gioi thieu',
                 'description' => 'Thong tin gioi thieu ve cong ty.',
-                'keywords' => 'gioi thieu, cong ty, NhaDatVN',
+                'keywords' => 'gioi thieu, cong ty, BDSVanPhuc',
             ])
         ));
     }
@@ -306,7 +306,7 @@ class PageController extends BaseFrontendController
             $this->staticPageSeo('contact', [
                 'title' => 'Lien he',
                 'description' => 'Thong tin lien he voi chung toi.',
-                'keywords' => 'lien he, hotline, dia chi, NhaDatVN',
+                'keywords' => 'lien he, hotline, dia chi, BDSVanPhuc',
             ])
         ));
     }

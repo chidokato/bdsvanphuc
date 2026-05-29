@@ -10,8 +10,8 @@ class HomeController extends BaseFrontendController
     {
         $seo = $this->staticPageSeo('home', [
             'title' => 'Trang chu',
-            'description' => 'Trang chu bat dong san NhaDatVN.',
-            'keywords' => 'trang chu, bat dong san, nha dat, du an, NhaDatVN',
+            'description' => 'Trang chu bat dong san BDSVanPhuc.',
+            'keywords' => 'trang chu, bat dong san, nha dat, du an, BDSVanPhuc',
         ]);
 
         $locationProjects = Post::query()

@@ -20,7 +20,7 @@
                     <span class="text_primary-color text-button-small text-uppercase">Tin tuc</span>
                     <h3 class="mt_8 mb_8">{{ $currentCategory?->name ?? 'Tin tuc moi nhat' }}</h3>
                     <p class="text-body-default">
-                        {{ $currentCategory?->description ?: 'Tong hop cac bai viet tin tuc moi nhat tu NhaDatVN.' }}
+                        {{ $currentCategory?->description ?: 'Tong hop cac bai viet tin tuc moi nhat tu BDSVanPhuc.' }}
                     </p>
                 </div>
 

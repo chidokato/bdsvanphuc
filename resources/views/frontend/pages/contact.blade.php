@@ -115,7 +115,7 @@
                     <div class="contact-card">
                         <h5 class="title">Thông tin công ty</h5>
                         <ul class="contact-list list-unstyled mb-0">
-                            <li><strong>Tên công ty:</strong> {{ $settings->company_name ?? 'NhaDatVN' }}</li>
+                            <li><strong>Tên công ty:</strong> {{ $settings->company_name ?? 'BDSVanPhuc' }}</li>
                             <li><strong>Địa chỉ:</strong> {{ $settings->address ?? '...' }}</li>
                             <li><strong>Email:</strong> {{ $settings->email ?? '...' }}</li>
                             <li><strong>Hotline:</strong> {{ $settings->hotline ?? '...' }}</li>

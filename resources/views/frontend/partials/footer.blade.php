@@ -24,7 +24,7 @@
                 0 => '<p class="mb_16 text_white"><img src="' . e($footerLogo) . '" alt="logo" class="main-logo footer-editor-logo"></p>',
                 1 => '<ul><li><a href="' . e(route('frontend.home')) . '">Trang chủ</a></li><li><a href="' . e(route('frontend.about')) . '">Giới thiệu</a></li><li><a href="' . e(route('frontend.news.index')) . '">Tin tức</a></li><li><a href="' . e(route('frontend.contact')) . '">Liên hệ</a></li></ul>',
                 2 => '<ul><li><a href="' . e(route('frontend.about')) . '">Giới thiệu</a></li><li><a href="' . e(route('frontend.home')) . '">Dự án</a></li><li><a href="' . e(route('frontend.news.index')) . '">Tin tức</a></li><li><a href="' . e(route('frontend.contact')) . '">Liên hệ</a></li></ul>',
-                3 => '<p>Theo dõi thông tin mới nhất từ NhaDatVN.</p>',
+                3 => '<p>Theo dõi thông tin mới nhất từ BDSVanPhuc.</p>',
             ];
 
             $column['content'] = $defaults[$index] ?? '';
@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="footer-bottom d-flex align-items-center justify-content-between">
-            <p class="text_muted-color">&copy;{{ now()->year }} <a href="{{ route('frontend.home') }}" class="text_white hover-underline-link">NhaDatVN</a>. All Rights Reserved.</p>
+            <p class="text_muted-color">&copy;{{ now()->year }} <a href="{{ route('frontend.home') }}" class="text_white hover-underline-link">BDSVanPhuc</a>. All Rights Reserved.</p>
         </div>
     </div>
 </footer>

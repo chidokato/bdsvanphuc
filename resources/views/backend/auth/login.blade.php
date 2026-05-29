@@ -2,10 +2,10 @@
 <html lang="vi" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="default" data-theme-colors="default">
 <head>
     <meta charset="utf-8" />
-    <title>Dang nhap Admin | NhaDatVN</title>
+    <title>Dang nhap Admin | BDSVanPhuc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trang dang nhap khu vuc quan tri NhaDatVN." />
-    <meta name="author" content="NhaDatVN" />
+    <meta name="description" content="Trang dang nhap khu vuc quan tri BDSVanPhuc." />
+    <meta name="author" content="BDSVanPhuc" />
     <link rel="shortcut icon" href="{{ asset('admin-assets/images/favicon.ico') }}">
 
     <script src="{{ asset('admin-assets/js/layout.js') }}"></script>
@@ -15,11 +15,11 @@
     <link href="{{ asset('admin-assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
 
     <style>
-        .nhadat-brand {
+        .bdsvanphuc-brand {
             letter-spacing: 0.08em;
         }
 
-        .nhadat-brand span {
+        .bdsvanphuc-brand span {
             color: #0ab39c;
         }
 
@@ -56,7 +56,7 @@
                                         <div class="position-relative h-100 d-flex flex-column">
                                             <div class="mb-4">
                                                 <a href="{{ route('frontend.home') }}" class="d-inline-block text-white text-decoration-none">
-                                                    <h2 class="nhadat-brand mb-0 text-white fw-bold">NhaDat<span>VN</span></h2>
+                                                    <h2 class="bdsvanphuc-brand mb-0 text-white fw-bold">BDSVanPhuc</h2>
                                                 </a>
                                             </div>
 
@@ -100,7 +100,7 @@
                                     <div class="p-lg-5 p-4">
                                         <div>
                                             <h5 class="text-primary">Dang nhap quan tri</h5>
-                                            <p class="text-muted">Nhap thong tin de vao trang admin cua NhaDatVN.</p>
+                                            <p class="text-muted">Nhap thong tin de vao trang admin cua BDSVanPhuc.</p>
                                         </div>
 
                                         <div class="mt-4">
@@ -108,7 +108,7 @@
                                                 @csrf
                                                 <div class="mb-3">
                                                     <label for="email" class="form-label">Email hoac ten dang nhap</label>
-                                                    <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email', 'tuan.pn92@gmail.com') }}" placeholder="admin@nhadatvn.org">
+                                                    <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email', 'tuan.pn92@gmail.com') }}" placeholder="admin@bdsvanphuc.org">
                                                     @error('email')
                                                         <div class="invalid-feedback">{{ $message }}</div>
                                                     @enderror
@@ -171,7 +171,7 @@
                     <div class="col-lg-12">
                         <div class="text-center">
                             <p class="mb-0 text-muted">
-                                &copy; <script>document.write(new Date().getFullYear())</script> NhaDatVN Admin
+                                &copy; <script>document.write(new Date().getFullYear())</script> BDSVanPhuc Admin
                             </p>
                         </div>
                     </div>
