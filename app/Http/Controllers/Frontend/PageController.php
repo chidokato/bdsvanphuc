@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Models\Category;
+use App\Models\Page;
 use App\Models\Post;
 use App\Models\User;
+use Illuminate\Support\Str;
 
 class PageController extends BaseFrontendController
 {
@@ -66,7 +68,16 @@ class PageController extends BaseFrontendController
         $category = Category::query()
             ->where('is_active', true)
             ->where('slug', $slug)
-            ->firstOrFail();
+            ->first();
+
+        if (! $category) {
+            $page = Page::query()
+                ->where('is_active', true)
+                ->where('slug', $slug)
+                ->firstOrFail();
+
+            return $this->renderPage($page);
+        }
 
         if ($category->type === Category::TYPE_PRODUCT) {
             return $this->productCategory($slug);
@@ -286,6 +297,21 @@ class PageController extends BaseFrontendController
             'relatedPosts' => $relatedPosts,
             'pageTitle' => $post->seo_title ?: $post->title,
             'pageDescription' => $post->seo_description ?: $post->summary,
+        ]));
+    }
+
+    protected function renderPage(Page $page)
+    {
+        $htmlContent = $page->html_content ?? '';
+
+        if (Str::contains(Str::lower($htmlContent), ['<!doctype', '<html'])) {
+            return response($htmlContent);
+        }
+
+        return view('frontend.pages.show', $this->sharedViewData([
+            'page' => $page,
+            'pageTitle' => $page->seo_title ?: $page->title,
+            'pageDescription' => $page->seo_description,
         ]));
     }
 

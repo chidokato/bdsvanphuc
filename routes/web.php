@@ -7,6 +7,7 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ContentController;
 use App\Http\Controllers\Backend\CustomerInquiryController as BackendCustomerInquiryController;
 use App\Http\Controllers\Backend\MenuController;
+use App\Http\Controllers\Backend\PageController as BackendPageController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\SeoConfigController;
 use App\Http\Controllers\Backend\UserController;
@@ -112,6 +113,12 @@ Route::prefix('admin')->name('backend.')->group(function () {
         Route::resource('users', UserController::class)
             ->except(['show'])
             ->names('users');
+
+        Route::resource('pages', BackendPageController::class)
+            ->except(['show'])
+            ->names('pages');
+        Route::patch('pages/{page}/toggle-status', [BackendPageController::class, 'toggleStatus'])
+            ->name('pages.toggle-status');
 
         Route::get('customer-inquiries', [BackendCustomerInquiryController::class, 'index'])
             ->name('customer-inquiries.index');
